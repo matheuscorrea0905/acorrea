@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACORREA Construções Civil</title>
+
+<style>
+:root{
+    --fundo:#f2f2f2;
+    --card:#ffffff;
+    --texto:#222;
+    --primaria:#0a5c36;
+}
+
+.dark{
+    --fundo:#0e0e0e;
+    --card:#181818;
+    --texto:#f1f1f1;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:var(--fundo);
+    color:var(--texto);
+}
+
+.container{
+    max-width:900px;
+    margin:0 auto;
+    background:var(--card);
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+header{text-align:center;}
+
+.logo{
+    max-width:320px;
+    margin-bottom:10px;
+}
+
+.btnTema{
+    margin-top:10px;
+    cursor:pointer;
+    padding:6px 10px;
+}
+
+.links{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:10px;
+}
+
+.links a, .orcamento{
+    text-decoration:none;
+    background:var(--primaria);
+    color:white;
+    padding:10px 15px;
+    border-radius:8px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    gap:10px;
+}
+
+.galeria img{
+    width:100%;
+    border-radius:8px;
+}
+
+footer{
+    margin-top:30px;
+    text-align:center;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+    <img src="logoacorrea.png" class="logo" alt="Logo ACORREA">
+    <p>Atendemos Londrina e região — Especialistas em barracões com blocos</p>
+
+    <button class="btnTema" onclick="trocarTema()">Modo claro/escuro</button>
+</header>
+
+<div class="links">
+    <a href="https://www.instagram.com/a_correa_construcaocivil/" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@alexandrecorrea037" target="_blank">TikTok</a>
+    <a href="https://wa.me/5543984929910" target="_blank">WhatsApp</a>
+</div>
+
+<center style="margin-top:15px;">
+<a class="orcamento" href="https://wa.me/5543984929910?text=Olá%20gostaria%20de%20solicitar%20um%20orçamento%20para%20construção" target="_blank">
+Solicitar Orçamento
+</a>
+</center>
+
+<section>
+<h2>Sobre a Empresa</h2>
+<p>
+Nós da ACORREA Construções Civil somos especializados na construção de barracões com blocos, atendendo Londrina e toda a região, com qualidade, responsabilidade e compromisso com prazos. Nosso foco principal é a execução de barracões comerciais e industriais utilizando sistema construtivo em blocos, garantindo resistência, economia e excelente acabamento.
+</p>
+</section>
+
+<section>
+<h2>O que fazemos</h2>
+<ul>
+<li>Construção de casas e barracões</li>
+<li>Reformas em geral</li>
+<li>Assentamento de pisos e revestimentos</li>
+<li>Pintura residencial e comercial</li>
+<li>Serviços de alvenaria</li>
+<li>Projetos e acabamentos</li>
+</ul>
+</section>
+
+<section>
+<h2>Por que construir seu barracão conosco?</h2>
+<ul>
+<li><strong>Melhor preço da região:</strong> trabalhamos com orçamento justo, sem surpresas e com excelente custo-benefício.</li>
+<li><strong>Entrega no menor prazo possível:</strong> equipe experiente e organizada para concluir a obra com rapidez e qualidade.</li>
+<li><strong>Especialistas em barracões com blocos:</strong> sistema construtivo mais econômico, resistente e com ótimo isolamento térmico.</li>
+<li><strong>Estrutura durável e segura:</strong> obras executadas seguindo padrões técnicos e materiais de qualidade.</li>
+<li><strong>Atendimento transparente:</strong> acompanhamento da obra do início ao fim, com diálogo direto com o cliente.</li>
+<li><strong>Soluções personalizadas:</strong> projeto adaptado para sua empresa, comércio ou indústria.</li>
+</ul>
+</section>
+
+<section>
+<h2>Galeria de Obras</h2>
+<div class="galeria">
+<img src="obra1.png" alt="Obra 1">
+<img src="obra2.png" alt="Obra 2">
+<img src="obra3.png" alt="Obra 3">
+</div>
+</section>
+
+<footer>
+Feito por Matheus Correa
+</footer>
+
+</div>
+
+<script>
+function trocarTema(){
+    document.body.classList.toggle('dark');
+}
+</script>
+
+</body>
+</html>
